@@ -1,24 +1,9 @@
-# README
+## Elastic Search
+docker run -d --name elasticsearch -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.10.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Indexing elastic search
+Article.__elasticsearch__.create_index!(force: true)
+Article.import
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## generate articles
+rails articles:generate
