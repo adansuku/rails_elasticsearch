@@ -7,3 +7,8 @@ Article.import
 
 ## generate articles
 rails articles:generate
+
+## Example
+![Example](https://imgur.com/fE3vqgW.png)
+
+Readme ongoing...
